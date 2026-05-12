@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+
+\begin{document}
+  
+  You can type $\mathbb{R}$ by \textbackslash mathbb\{Character\}, and don't forget to \textbackslash usepackage\{amssymb\}, for example:\\
+  The distributive states that $a(b+c)=ab+ac$ for all $a, b, c \in \mathbb{R}$.
+
+  \bigskip
+  It's easy to type squer brackets [R], but to type curly prackets you have to type backslash (\textbackslash)
+  before each curly bracket, for example :\\
+  The set $A$ is defined to be $\{1, 2, 3\}$
+
+  \bigskip
+  Insert the doller sign type $ \$ $.
+
+  \bigskip
+  $ 2(\dfrac{1}{x^2-1}) $ \hspace{0.5cm} Oh, the brackets is bad, let's fix them :
+  $ 2\left(\dfrac{1}{x^2-1}\right) $
+  $$ 2\left[\frac{1}{x^2-1}\right] $$
+  $$ 2\left\{\frac{1}{x^2-1}\right\} $$
+  $$ 2\left\langle \frac{1}{x^2-1} \right\rangle $$
+  $$ 2\left| \frac{1}{x^2-1} \right| $$
+  $ \dfrac{dx}{dy}|_{x=1} $ \hspace{5mm} Oh, the form of the $|$ is short, let's fix it:
+  $ \left.\dfrac{dx}{dy}\right|_{x=1} $\\
+
+\noindent\rule{15.5cm}{2pt}
+
+\vspace{0.5cm}
+  Tables:\\\\
+  \begin{tabular}{|c||c|c|c|c|c|} % c for center aligned, l for left aligned, r for right aligned.
+      % you can use any kind of combination like {rcclll}.
+      \hline
+      x & 1 & 2 & 3 & 4 & 5\\ \hline % we saperate colums with ampersand (&).
+      $ f(x) $ & 10 & 20 & 30 & 40 & 50\\ \hline 
+      
+  \end{tabular}
+
+\vspace{0.2cm}
+\begin{table}[H] % The compiler put the table in the place where it fit best,
+% and to tell the compiler to put the table where we typed it, we use [H] that requiers to \usepackage{float}.  
+\centering
+\def\arraystretch{1.5} % to increase the space form the top to the bottom of the table cells 
+\begin{tabular}{|c||c|c|c|c|c|}
+    \hline
+    x & 1 & 2 & 3 & 4 & 5\\ \hline
+    $ f(x) $ & $\frac{1}{2}$ & 20 & 30 & 40 & 50\\ \hline 
+    
+\end{tabular}
+\caption{These values represent the function $f(x)$.}
+% You can type the caption above or bellow the table. (here is bellow)
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\caption{The relationship between $f$ and $f'$.}
+\def\arraystretch{1.5} 
+\begin{tabular}{|l|p{5cm}|} 
+    \hline
+    $f(x)$ & $f'(x)$\\ \hline
+    $x>0$ & The function $f(x)$ is increasing.\newline
+    I will type here a lot of words to make the sentence to long 
+    to show you how to fit a paragraph in the cells of the column 
+    now I think that's enough.\newline
+    you can edite the width of the column from p\{here\}.\\
+    \hline 
+    
+\end{tabular}
+\end{table}
+
+\vspace{1cm}
+Arrays:
+\begin{align}
+  5x^2-9=x+3\\
+  5x^2-x-12=0
+\end{align}
+
+\begin{align}
+  5x^2-9&=x+3\\
+  5x^2-x-12&=0
+\end{align}
+
+\begin{align*}
+  5x^2-9&=x+3\\
+  5x^2-x-12&=0
+\end{align*}
+
+\begin{align}
+  5x^2 \text{place your words here}\\
+  5x^2 \, \text{place your words here}\\
+  5x^2 \hspace{2mm} \text{place your words here}
+\end{align}
+
+\end{document}

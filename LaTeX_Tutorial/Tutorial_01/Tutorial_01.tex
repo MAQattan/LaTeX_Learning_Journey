@@ -1,0 +1,136 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+
+\title{My first document}
+\date{2013-09-01}
+\author{John Doe}
+
+\begin{document}
+\pagenumbering{gobble}
+  \maketitle
+
+  \newpage
+\pagenumbering{arabic}
+\section{Section}
+Hello World!
+\subsection{Subsetion}
+Stucturing a document is easy!
+\subsubsection{Subsubsection}
+More Text.
+\paragraph{Paragraph}
+some more text.
+\subparagraph{Subparagraph}
+Even more text.
+\section{Another section}
+
+  \newpage
+to type an equation
+\begin{equation}
+  f(x) = x^2
+\end{equation}
+to remove the automatic numbering be useing {amsmath} package
+\begin{equation*}
+  f(x) = x^2
+\end{equation*}
+To make use of the inline math feature.
+This formula $f(x) = x^2$ is an example.
+The equation and align environment
+\begin{align*}
+    1 + 2 &= 3\\
+    1 &= 3 - 2
+\end{align*}
+ Fractions and more
+
+\begin{align*}
+    f(x) &= x^2\\
+    g(x) &= \frac{1}{x}\\
+    F1(x) &= \int^a_b \frac{1}{3}x^3\\  % here just letter with (int)
+    F2(x) &= \int_{min}^{max} \frac{1}{3}x^3 % this way for typing word with (int) 
+\end{align*}
+    
+    
+\begin{align*}
+  F3(x) &= (\frac{1}{\sqrt{x}}) \\
+  F4(x) &= \left( \frac{1}{\sqrt{x}} \right) \\
+  F5(x) &= \left[ \frac{1}{\sqrt{x}} \right] \\
+  F6(x) &= \left| \frac{1}{\sqrt{x}} \right|
+\end{align*}
+
+ Matrices
+\[
+\begin{matrix} 1 & 0 \\ 0 & 1 \end{matrix}
+\]
+
+For the inline $ \begin{matrix} 1 & 0 \\ 0 & 1 \end{matrix} $
+
+to use brackets you have to ways \newline
+use name documents - for [] use {bmatrix} - for () use {pmatrix} - for || use {vmatrix}
+\[ \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} \] 
+\[ \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \]
+\[ \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} \]
+% or use \left( \right) for () - \left[ \right] for [] - \left| \right| for ||
+\[ \left[ \begin{matrix} a & b \\ b & a \end{matrix} \right] \]
+\[ \left( \begin{matrix} a & b \\ b & a \end{matrix} \right) \]
+\[ \left| \begin{matrix} a & b \\ b & a \end{matrix} \right| \]
+% Determinant
+\[ det1{\begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix}} \]
+\[ det2{\left| \begin{matrix} a & b \\ b & a \end{matrix} \right|} \]
+
+
+% using Dots: \cdot , \cdots , \vdots , \ddots , \ldots
+\[
+ \begin{bmatrix}
+  1 & 0 & \cdots & 0 \\
+  1 & 0 & \cdots & 0 \\
+  \vdots & \vdots & \ddots & \vdots \\
+  1 & 0 & 0 & 0
+ \end{bmatrix}
+\]
+
+Miscellaneous functions
+$ \log{x} $ , $\log_a{x} $ , $ \sqrt{x} $ , $ \sqrt[n]{x} $ , $ \frac{u(x)}{v(x)} $ \newline
+Trigonometic functions $ \sin x $ , $ \cos x $ , $ \tan x $ , $ \cot x $ , $ \sec x $ , $ \csc x $. 
+\newline
+Integrals $ \int f(x) dx $ , $\int_a^b f(x) dx $ , $ \int_D f(x) $ also you can continue like this :
+\[ \iint f(x,y) dx dy \]
+\[ \iiint f(x,y,z) dx dy dz \]
+\[ \oint_C F ds \]
+
+  \newpage
+Captioned images / figures in LaTeX
+
+\begin{figure}[t!]
+  \includegraphics[width=\linewidth]{syria.jpg}
+  \caption{A syria.}
+  \label{fig:syria}
+\end{figure}
+Figure \ref{fig:syria} shows a what...
+%...
+% \begin{figure}[h!]
+%   \centering
+%   \begin{subfigure}[b]{0.2\linewidth}
+%     \includegraphics[width=\linewidth]{what.jpeg}
+%      \caption{what.}
+%   \end{subfigure}
+%   \begin{subfigure}[b]{0.2\linewidth}
+%     \includegraphics[width=\linewidth]{what.jpeg}
+%     \caption{More what.}
+%   \end{subfigure}
+%   \begin{subfigure}[b]{0.2\linewidth}
+%     \includegraphics[width=\linewidth]{what.jpeg}
+%     \caption{Tasty what.}
+%   \end{subfigure}
+%   \begin{subfigure}[b]{0.5\linewidth}
+%     \includegraphics[width=\linewidth]{what.jpeg}
+%     \caption{Too much what.}
+%   \end{subfigure}
+%   \caption{The same cup of coffee. Multiple times.}
+%   \label{fig:coffee3}
+% \end{figure}
+% %...
+
+\end{document}

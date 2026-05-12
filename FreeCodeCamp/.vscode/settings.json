@@ -1,0 +1,37 @@
+{
+  "editor.formatOnSave": false,
+
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-pdf",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-synctex=1",
+        "%DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (pdf)",
+      "tools": ["latexmk"]
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+
+  "latex-workshop.formatting.provider": "latexindent",
+  "latex-workshop.formatting.latexindent.path": "latexindent",
+  "latex-workshop.formatting.latexindent.args": [
+    "-c",
+    "%DIR%/",
+    "-y=defaultIndent: '  '"
+  ],
+
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  }
+}

@@ -1,0 +1,22 @@
+\documentclass[11pt]{article}
+
+\usepackage{fontspec}      % ضروري مع LuaLaTeX
+\usepackage{polyglossia}
+\usepackage{graphicx}
+\usepackage{hyperref}      % لازم يكون قريب من الأخير
+\usepackage{url}
+
+\setmainlanguage{arabic}
+\setotherlanguage{english}
+\newfontfamily\arabicfont[Script = Arabic]{Amiri}
+\newcommand{\en}{\textenglish}
+
+\begin{document}
+
+رابط:
+\en{\url{\en{https://www.google.com}}}
+
+أو:
+\en{\href{https://www.google.com}{Google}}
+
+\end{document}

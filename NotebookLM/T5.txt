@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+
+\title{Text and Document formatting in \LaTeX}
+\author{Muhammmad Ali Qattan}
+\date{November 21, 2025} % Or you can use {\today} 
+
+\begin{document}
+\tableofcontents
+\maketitle
+Normal text
+
+\textit{italicized text}
+
+\textbf{bold text}
+
+\textsc{small caps text}
+
+\texttt{Typewriter font text}
+
+To make a clickable : first \textbackslash usepackage\{hyperref\}, second click on -> \url{https://www.youtube.com/watch?v=3KvsemMjHPU&list=PL1D4EAB31D3EBC449&index=5}.
+
+you can customize this because is really long and ugly, \href{https://www.youtube.com/watch?v=3KvsemMjHPU&list=PL1D4EAB31D3EBC449&index=5}{This tutorial link}.
+
+\newpage
+To change the text size, there a couple of ways to do that:\\
+
+\begin{tiny}Please excuse me dear aunt Sally\end{tiny}.\\
+\begin{scriptsize}Please excuse me dear aunt Sally\end{scriptsize}.\\
+\begin{small}Please excuse me dear aunt Sally\end{small}.\\
+Please excuse me dear aunt Sally. (this is the normal size)\\
+\begin{large}Please excuse me dear aunt Sally\end{large}.\\
+\begin{Large}Please excuse me dear aunt Sally\end{Large}.\\
+\begin{LARGE}Please excuse me dear aunt Sally\end{LARGE}.\\
+\begin{huge}Please excuse me dear aunt Sally\end{huge}.\\
+\begin{Huge}Please excuse me dear aunt Sally\end{Huge}.
+
+\vspace{1cm}
+
+\begin{center} Please excuse me dear aunt Sally \end{center}
+\begin{flushleft} Please excuse me dear aunt Sally \end{flushleft}
+\begin{flushright} Please excuse me dear aunt Sally \end{flushright}
+
+\vspace{1cm}
+
+\centering %(c) but this command will apply the order from here to the end of the current docummet or figure ..
+this is the sentence one\\
+this is the sentence two\\
+this is the sentence three 
+
+\vspace{0.3cm}
+
+\tiny
+this is the sentence one\\
+this is the sentence two\\
+this is the sentence three 
+
+\huge
+this is the sentence one\\
+this is the sentence two\\
+this is the sentence three 
+
+\flushleft \tiny
+this is the sentence one\\
+this is the sentence two\\
+this is the sentence three 
+
+\flushright \tiny
+this is the sentence one\\
+this is the sentence two\\
+this is the sentence three
+
+\newpage
+\normalsize \flushleft
+\section{Linear Functions}
+    \subsection{Slope-Intercept Form}
+        \subsubsection{Example 1:}
+        \subsubsection{Example 2:}
+    \subsection{Standerd Form}
+    \subsection{Point-Slope Form}
+\section{Quadratic Functions}
+    \subsection{Vertex Form}
+    \subsection{Standerd Form}
+    \subsection{Factored Form}
+\section*{This Section Without Number}
+    \subsection*{The same thing with subsection}
+% Now you can make a table of content by typing \tableofcontent
+
+
+
+\end{document}

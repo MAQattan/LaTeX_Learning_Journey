@@ -1,0 +1,50 @@
+{
+  "latex-workshop.latex.autoBuild.run": "onSave",
+
+  "latex-workshop.latex.tools": [
+    {
+      "name": "LuaLaTeX", // LuaLaTeX
+      "command": "lualatex", // lualatex
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    }
+  ],
+
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "LuaLaTeX", // LuaLaTeX 
+      "tools": ["LuaLaTeX"] // LuaLaTeX
+    }
+  ],
+
+  "latex-workshop.latex.recipe.default": "LuaLaTeX", // LuaLaTeX
+
+  "latex-workshop.view.pdf.viewer": "tab",
+
+  "latex-workshop.formatting.provider": "latexindent",
+  "latex-workshop.formatting.latexindent.path": "latexindent",
+  "latex-workshop.formatting.latexindent.args": [
+    "-c",
+    "%DIR%/",
+    "-y=defaultIndent: '  '"
+  ],
+
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+
+    // "editor.bracketPairColorization.enabled": false,
+  "editor.guides.bracketPairs": true, // to create line between matching brackets.
+  "editor.renderWhitespace": "all", // to put point in the empty space, "none", "boundary" putting point at the end of the line onle, "all"
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.nonBasicAscii": false,
+  "editor.unicodeHighlight.includeComments": false,
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": false, // Make it "true" when you have to open old files that are't UTF-8. 
+  "editor.rulers": [100, 160, 240, 320, 400]  // to create vertical lines
+
+}

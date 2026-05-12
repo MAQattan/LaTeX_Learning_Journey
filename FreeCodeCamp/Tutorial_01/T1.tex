@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+
+\begin{document}
+Hello! This is my first \LaTeX\ document.\\
+A rectangle has side lengths of $(x+1)$ and $(x+3)$.\\
+The equation $${A(x)=x^2+4x+3}$$ gives the area of the rectangle.
+%=========
+To start a new paragraph we use a hard return by insert a blank line in between (like how I just do).\\
+If you want to type in the same paragraph you have to use the soft return and that by ending the previous line of code with double slash (Just like how I did with the previous line).
+%=========
+
+\bigskip % to insert a blank line between (two paragraphs)
+You can turn indenting off in your document by use \{\textbackslash parindent 0px\}:
+%=========
+
+\parindent 0px
+This is the first sentence.\\
+This is the second sentence without inserting a blank line. 
+%=========
+
+\bigskip
+And you can change the distence of the indenting by increasing the px number.
+
+\parindent 35px % The standerd is 18pt
+There three ways to insert (Horizontal line)
+
+For a simple horizontal line type \textbackslash hrule
+
+\hrule
+\bigskip
+You can use \textbackslash bigskip to insert lines around the horizontal line.
+Horizontal line of a specified thickness\\ % The \\ is obligatory
+\rule{\linewidth}{2pt}
+
+Controlling the horizontal line width\\
+(Without \textbackslash \textbackslash)
+\noindent\rule{5cm}{2pt} \\
+(With \textbackslash \textbackslash)\\
+\noindent\rule{5cm}{2pt} 
+%=========
+\end{document}

@@ -1,0 +1,66 @@
+\documentclass[10pt, a4paper]{article} %(c) you can use different forms of papers like : a4paper, letterpaper 
+% \usepackage{fullpage} %(c) A quick easy package to make the morgins one inch (2.5cm)
+% \usepackage[margin=2.5cm]{geometry} %(c) to customize your margins you need to \usepackage like {geometry} 
+%(c) To modify each margin by your own :
+\usepackage[top=2cm, bottom=2.5cm, left=3cm, right=1.5cm]{geometry}
+%(c) you can also explicitly specify your paper size, by adding inside the square brackets (paperwidth) and (paperheight)
+% \usepackage[top=2cm, bottom=2.5cm, left=3cm, right=1.5cm, paperwidth=15cm, paperheight=21cm]{geometry}
+% \usepackage{amsfonts} %(c) this package for specialized math notations 
+%(c) you can put more than one package in the same command:
+\usepackage{amsfonts, amssymb, amsmath}
+%(c) you can load macros in your preamble, (macros are used to defined your own custem latex command), the syntex of this is \def\name{the command}:
+\def\eq1{y=\dfrac{x}{3x^2+x+1}}
+%(c) To insert images:
+\usepackage{graphicx}
+\usepackage{float}
+
+
+
+
+\begin{document} 
+\textbf{Critical Thinking Questions}
+
+\begin{enumerate}
+    \item Let's examine the function $\eq1$.
+    \item This is the symbol for set of all real numbers: $ \mathbb{R} $.
+    \item This is the symbol for set of integers: $ \mathbb{Z} $.
+    \item This is the symbol for set of rationals: $ \mathbb{Q} $.
+    \item Is it possible for a sequence to converge to two different numbers? If so, give an example. If not, explain why not.
+    \item Explain how to use partial sums to determine if a series converges or diverges. Give an example
+    \item Explain why $\int\limits_{1}^{\infty} f(x)\,dx$ and $\sum\limits_{n=1}^{\infty} a_n$ need not converge to the same value, even if they are both convergent.
+    \item  In your own words, explain the Alternating Series Remainder Theorem. How is this theorem useful?
+    \item Explain the difference between absolute and conditional convergence. Give an example of each.
+    \item The Ratio Test is inconclusive if $\displaystyle{\lim\limits_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| =1}$. Give an example of one convergent series and one divergent series for which $\displaystyle{\lim\limits_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| =1}$. Explain how you determined your examples.
+\end{enumerate}
+
+\newpage
+\vspace{0.2cm}
+\includegraphics[scale=0.099]{logo.jpg}
+
+%(c) instead of using [scale] you can use [width] and [height] or one of them:
+\includegraphics[width=7cm, height=2cm]{logo.jpg}
+
+%(c) And you can use precents instead of cm, mm, in:
+\includegraphics[width=0.4\textwidth]{logo.jpg} %(c) that means 0.5 relative of the text width.
+
+%(c) to center your image:
+\begin{center}\includegraphics[width=0.4\textwidth]{logo.jpg} \end{center}
+
+\begin{figure}[h] %(c) use [h] to put the figure here, [t] for the top of the page, and [b] for the bottom of the page.
+    \includegraphics[width=0.4\textwidth]{logo.jpg}
+\end{figure}
+
+% If the small letter (h,t,and b) didn't work use the capital letter(H,T,and B)
+\begin{figure}[H] % but this action requires to \usepackage{float}.
+    \centering
+    \includegraphics[width=0.4\textwidth]{logo.jpg}
+    \caption{This is the comma logo}
+\end{figure}
+
+
+
+\end{document}
+
+
+
+

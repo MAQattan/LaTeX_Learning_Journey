@@ -1,0 +1,5 @@
+\babel@toc {arabic}{}\relax 
+\contentsline {chapter}{\numberline {1}علوم الحاسوب}{2}{}%
+\contentsline {section}{\numberline {1.1}تاريخ}{2}{}%
+\babel@toc {arabic}{}\relax 
+\babel@toc {arabic}{}\relax 

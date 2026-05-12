@@ -1,0 +1,102 @@
+\documentclass{beamer}
+
+\usepackage{multicol}
+
+% \usetheme{Warsaw}
+\usetheme[progressbar=frametitle]{metropolis}
+\setbeamertemplate{frame numbering}[fraction]
+\useoutertheme{metropolis}
+\useinnertheme{metropolis}
+\usefonttheme{metropolis}
+\usecolortheme{spruce}
+\setbeamercolor{background canvas}{bg=white}
+
+\definecolor{ferngreen}{rgb}{0.31, 0.47, 0.26} %(c) I defined this color for the theme
+\usecolortheme[named=ferngreen]{structure}
+\definecolor{mytextgreen}{rgb}{0.0, 0.65, 0.31} %(c) I defined this color for the text below 
+
+\setbeamercovered{transparent=15} %(c) It applies only on \onslide command.
+
+\title[Short Title]{Your title here}
+\subtitle{Your subtitle here}
+\author{Muhammad Ali Qattan}
+\institute{\large \textbf{Includes}\\[6pt] the creation of a titlepage, changing theme options and colors, adjusting visibility using \textbackslash only and \textbackslash onslide commands, using columns, and adjusting spacing of slide content.
+}
+\date{\today}
+
+\begin{document}
+%(c) In Beamer we create frames to hold all of our information, a frame can contain a single slide in your slide presentation, or it can actually contians multiple slides 
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}[t]{Function}
+  \metroset{block=fill}
+  \vspace{6pt}
+  \begin{block}{Defintion of the function}
+    \vspace{0.5em}
+    A function $f$ is a rule that assigns to each element $x$ in aet $D$ exactly one element, called $f(x)$, in a det $E$.
+    \vspace{0.5em}
+  \end{block}
+
+  \vspace{10pt}
+
+  Set $D$ is called the
+  \only<1>{\,\line(1,0){50}}
+  \only<2>{\textcolor{mytextgreen}{domain}}%(c) I defined this color above
+  \only<3>{\textcolor{mytextgreen}{domain}}
+  \,of the function.\\[5pt]
+
+  Set $E$ is called the
+  \only<1>{\,\line(1,0){50}}
+  \only<2>{\line(1,0){50}\,}
+  \only<3>{\textcolor{mytextgreen}{range}\,\,}%(c) I defined this color above
+  \,of the function.
+
+\end{frame}
+
+
+
+\begin{frame}[t]{The title name of the slide} %(c) By default it's going to place the content in the middle of the page with left aligned, if you don't want that use [t] or [b]
+  \vspace{0.5cm}
+  \begin{enumerate}
+    \item This is the item number one.
+    \item This is the item number two.
+    \item This is the item number three.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Farent Functions} \vspace{4pt}
+  You should be able to idetify be name and sketch a graph of each of the following parent functions. 
+    \begin{enumerate}
+      \begin{multicols}{3}
+        \item $y=x$
+        \item $y=|x|$
+        \item $y=x^2$
+        \item $y=x^3$
+        \item $y=x^b$
+        \onslide<2->{
+        \item $y=\sqrt{x}$
+        \item $y=\sqrt[3]{x}$
+        \item $y=\frac{1}{x}$
+        \item $y=2^x$
+        \item $y=e^x$
+        }
+        \onslide<3->{
+        \item $y=\ln x$
+        \item $y=\frac{1}{1+e^{-x}}$
+        \item $y=\sin x$
+        \item $y=\cos x$
+        \item $y=\tan x$
+        }
+        %(c) Now we will go up to our preamble to use setbeamrtcoverd command to control the transparncy of the onslide elements (it apply only on \onslidel elements and wouldn't do any thing with \only elements).
+      \end{multicols}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[standout]
+  This place would be a good place to include references, or contact information etc.
+\end{frame}
+
+\end{document}

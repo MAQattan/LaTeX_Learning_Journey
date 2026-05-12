@@ -1,0 +1,15 @@
+\xpg@aux {numerals=western}{arabic}
+\contentsline {section}{\numberline {1}مقدمة}{2}{section.1}%
+\contentsline {section}{\numberline {2}محولات الاختبار التقليدية}{2}{section.2}%
+\contentsline {subsection}{\numberline {2\textemdash 1}تركيبها العام}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2\textemdash 2}طريقة عملها}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2\textemdash 3}نقاط القصور في محولات الاختبار التقليدية}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}محولات الاختبار الحديثة الرقمية}{5}{section.3}%
+\contentsline {subsection}{\numberline {3\textemdash 1}تعريفها}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3\textemdash 2}الفروقات الأساسية بينها وبين المحولات التقليدية}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3\textemdash 3}نظام التحكم الرقمي}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {4}الأنظمة المعيارية \textenglish {(Modular High Voltage Test Systems)}}{7}{section.4}%
+\contentsline {subsection}{\numberline {4\textemdash 1}فكرة النمط المعياري}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4\textemdash 2}سهولة النقل والتركيب}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4\textemdash 3}التطبيقات}{7}{subsection.4.3}%
+\contentsline {section}{\numberline {5}الخاتمة}{8}{section.5}%

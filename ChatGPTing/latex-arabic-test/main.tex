@@ -1,0 +1,31 @@
+% ملف: main.tex
+\documentclass[12pt]{article}
+
+\usepackage{fontspec}        %(c) It's importent with XeLaTeX
+\usepackage{polyglossia}     %(c) Languages management \textendash and \textarabic.
+
+\setmainlanguage{arabic}
+\setotherlanguage{english}
+%(c) choos an arabic font has been instulled in your system: 
+\newfontfamily\arabicfont[Script=Arabic,Scale=1.0]{Amiri} % And this font is good (Scheherazade New)
+%(c) If you want to mix English text within Arabic text:
+\newfontfamily\englishfont{Latin Modern Roman}
+\newcommand{\al}{\textarabic} %(c) to make the command easier
+\newcommand{\el}{\textenglish} %(c) to make the command easier
+
+\begin{document}
+
+\title{تجربة \LaTeX{} \textenglish{(XeLaTeX + polyglossia)} بالعربية}
+\author{محمد علي قطان}
+\date{\today}
+\maketitle
+
+\section{مقدمة}
+% If you encounter any problems while writing in Arabic and English, you can use these definitions (\textarabic{Type in arabic here}, \text{Type in English here}) to ensure that no problems or interference between the two languages ​​occur.
+هذه تجربة بسيطة لاختبار دعم اللغة العربية داخل \LaTeX{} باستخدام \textenglish{\textbf{XeLaTeX}} و \textenglish{\textbf{polyglossia}}.
+% يفضل أن لا تستخدم التعريفات للعربي والنكليزي معا، اللغة الأساسية أكتبها بدون تعريفات واللغة الدخيلة اكتبها بتعرفات هذه افضل استخدام
+
+\subsection{مزج العربية والإنجليزية}
+نستطيع كتابة English داخل النص العربي بسهولة: \textenglish{This is English inside Arabic text}.
+
+\end{document}

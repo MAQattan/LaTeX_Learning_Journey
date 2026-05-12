@@ -1,0 +1,179 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage[none]{hyphenat} %(c) To prevet LaTeX form using hyphenated words
+\usepackage{fancyhdr} %(c) This allows me to create a custom header and footer
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{color}
+\usepackage[x11names]{xcolor}
+% \usepackage[nottoc, notlot, notlof]{tocbibind} %(c) for \tableofcontents .
+
+\pagestyle{fancy} 
+%(c) To clear the default header and the default hooter
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\slshape \MakeUppercase{Place Title Here}} %(c) We used \MakeUppercase{} to make my title capitalized and \slshape{} to make it in italics.  
+\fancyhead[R]{\slshape Muhammad Ali Qattan}
+\fancyfoot[C]{\thepage}
+% \renewcommand{\headrulewidth}{0pt} %(c) That removes the horozilntal line of the header
+% \renewcommand{\footrulewidth}{0.5pt} %(c) That appears the horozilntal line of the footer
+
+% \parindent 0px %(c) 0px because I don't want the paragraph indentation 
+\setlength{\parindent}{4em} %(c) also you can use this commad to change the width of the indentation
+\setlength{\parskip}{1em} %(c) This to change the spacing between your paragraphs
+\renewcommand{\baselinestretch}{1} %(c) That affencting the lines spacing
+
+\begin{document}
+  \begin{titlepage}
+    \begin{center}
+      \vspace*{1cm}
+      \Large{\textbf{IB Mathematics SL}}\\
+      \Large{\textbf{Internal Assessment}}\\
+      \vfill %(c) To add amount of space between these two items (before and after it) to fill the page 
+      \line(1,0){400}\\[1mm]
+      \huge{\textbf{This is a Sample Title}}\\[3mm]
+      \Large{\textbf{- This is a Sample Subtitle - }}\\[1mm]
+      \line(1,0){400}\\
+      \vfill %(c) to center them
+      By Muhammad Ali Qattan\\
+      Candidate 207047 \\[5mm]
+      \today\\
+    \end{center}
+  \end{titlepage}
+
+\tableofcontents %(c) for the table of contents
+\thispagestyle{empty} %(c) remove the header and the footer from this page 
+\clearpage %(c) clear tha page from any thing excipt the table of contents 
+
+\setcounter{page}{1}
+
+\section{Introduction}
+In this report, we explore several key aspects of \colorbox{yellow}{mathematical writing and research communication}. 
+The goal is to practice structuring a document using \LaTeX{}, while also understanding the 
+criteria typically used to assess \textcolor{red}{mathematical investigations}. 
+
+Throughout this document, we will present explanations, examples, and short exercises that 
+you can modify while learning. We also include tables, equations, and references to other 
+sections. \footnote{An example footnote}
+
+\section{Scoring Criteria}
+This section summarizes the criteria commonly used to evaluate mathematical work. 
+Each subsection describes a different scoring component.
+
+    \subsection{Communication}
+    (See this table \ref{tab:data1} if you want)\\ 
+    Clear communication is essential in mathematical writing. A well-structured report should:
+        \begin{itemize}
+            \item present ideas in a logical sequence,
+            \item define all mathematical symbols,
+            \item include diagrams or tables when helpful,
+            \item use consistent notation throughout.
+        \end{itemize}
+
+    As an example, consider the following table summarizing notation used in this document:
+
+        \begin{table}[h!]
+            \centering
+                \begin{tabular}{|c|c|}
+                \hline
+                Symbol & Meaning \\ \hline
+                $a_n$  & $n$-th term of a sequence \\ \hline
+                $f(x)$ & Function depending on $x$ \\ \hline
+                $\sum$ & Summation notation \\ \hline
+                \end{tabular}
+            \caption{Common Mathematical Symbols}
+            \label{tab:data1} %(c) To refer to this table later (we refered to this table in the line 64), for figures you can use {fig:thing}.
+        \end{table}
+
+
+\subsection{Mathematical Presentation}
+Your work should be mathematically accurate and logically reasoned. 
+This includes showing all steps and using appropriate formatting for equations.
+
+Below is an example formatted using the \texttt{equation} environment:
+\begin{equation}
+    \int_0^1 x^2 \, dx = \left[ \frac{x^3}{3} \right]_0^1 = \frac{1}{3}.
+\end{equation}
+
+We can also typeset systems of equations:
+\[
+\begin{cases}
+x + y = 7, \\
+2x - y = 3.
+\end{cases}
+\]
+
+\subsection{Personal Engagement}
+Personal engagement means showing your own thinking, discoveries, or motivation. 
+For example:
+\begin{quote}
+    ``I became curious about how the Fibonacci sequence grows, so I decided 
+    to model it using exponential approximations.''
+\end{quote}
+
+You can also include simple experiments you perform, like generating numbers with a small script or manually exploring patterns.
+
+\subsection{Reflection}
+Reflection means analyzing what you have learned, what challenges you faced, and how the mathematics connects to real life.
+
+Example reflective paragraph:
+
+Mathematical modeling helped me understand how quickly exponential functions grow. 
+I initially expected linear-like behavior, but after plotting several values, I realized 
+that exponential growth is far more rapid. This changed how I interpret graphs in real-world contexts such as population models.
+
+\subsection{Use of Mathematics}
+This criterion assesses the correctness and depth of your mathematical work. 
+
+You can practice by adding any of the following:
+    \begin{itemize}
+        \item derivations,
+        \item algebraic manipulation,
+        \item graphs created with TikZ,
+        \item proofs or justifications.
+    \end{itemize}
+
+Here is a small example involving sequences:
+\[
+a_n = 2n + 1 \quad \Rightarrow \quad S_n = \sum_{k=1}^{n} (2k+1) = n^2 + 2n.
+\]
+
+\subsection{Communication}
+This section is repeated in your original structure, but you may keep it if needed 
+for additional practice. Here, we include a short paragraph exercise:
+
+Effective communication ensures the reader can follow your mathematical arguments without confusion. Using clear paragraph transitions, labeled figures, and meaningful examples 
+helps achieve a professional writing style.
+
+\section{Conclusion}
+In this practice document, we created a structured \LaTeX{} file containing sections, 
+subsections, tables, equations, and lists. By modifying the content, adding new examples, 
+and experimenting with formatting, you will gradually become more confident using 
+\LaTeX{} for academic or professional writing. \cite{DBHS1}
+
+Future work could involve adding bibliographies, figures, TikZ diagrams, or exploring 
+packages such as \texttt{amsmath}, \texttt{graphicx}, and \texttt{hyperref}.
+
+\pagebreak %(c) Or you can use \newpage .
+\begin{thebibliography}{} 
+    \bibitem{DBHS1} %(c) DBHS1 is name you can choose any name you want for refering to it (like in line 152)
+    Alcosser, Howard.
+    ``Diamond Bar High School.''
+    \textit{Internal assessment: Mathematical Exploration.}
+    Web. 26/11/2025.
+    \bibitem{DBHS2}
+    Alcosser, Howard.
+    ``Diamond Bar High School.''
+    \textit{Internal assessment: Mathematical Exploration.}
+    Web. 26/11/2025.
+    \bibitem{DBHS3}
+    Alcosser, Howard.
+    ``Diamond Bar High School.''
+    \textit{Internal assessment: Mathematical Exploration.}
+    Web. 26/11/2025.
+\end{thebibliography}
+
+
+
+\end{document}

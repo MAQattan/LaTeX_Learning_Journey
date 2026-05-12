@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\usepackage{enumerate}
+\begin{document}
+Creating lists
+\begin{enumerate}
+    \item pencil
+    \item You're in the shallwer level
+    \begin{enumerate}
+        \item Welcome in the second level ;).
+        \begin{enumerate}
+            \item Welcome in the third level ;).
+            \begin{enumerate}
+                \item Welcome in the fourth level ;). 
+                \item Do You like the fourth level ? 
+                \item This level is deep, isn't ?  % To here the Compiler will tell you enough.
+            \end{enumerate}
+            \item Do You like the level ?
+            \item This level is deeper than the last one.
+        \end{enumerate}
+        \item Do you like the second level ?
+        \item People use this level too much.
+    \end{enumerate}
+    \item ruler
+    \begin{enumerate}
+        \item note one
+        \item note two
+        \item note three
+    \end{enumerate}
+    \item calculator
+            
+\end{enumerate}
+
+\vspace{1cm}
+
+You can change the item form. but don't forget to \textbackslash usepackage\{enumerate\}.
+\begin{enumerate}[A.] 
+    \item place
+    \item space
+    \item case
+    \item face
+\end{enumerate}
+
+\vspace{1cm}
+
+\begin{enumerate}[i.] 
+    \item place
+    \item space
+    \item case
+    \item face
+\end{enumerate}
+
+\vspace{1cm}
+
+You can start numbering with any number you want:
+\begin{enumerate}\setcounter{enumi}{5} 
+    \item place
+    \item space
+    \item case
+    \item face
+\end{enumerate}
+
+\vspace{1cm}
+
+You can type list without numbers:
+\begin{enumerate}
+    \item[] place
+    \item[] space
+    \item[] case
+    \item[] face
+\end{enumerate}
+
+\vspace{1cm}
+
+You can number manually:
+\begin{enumerate}
+    \item[2.] place
+    \item[5.] space
+    \item[22.] case
+    \item[15.] face
+\end{enumerate}
+
+\vspace{1cm}
+
+\begin{itemize}
+    \item pencil
+    \item You're in the shallwer level
+    \begin{itemize}
+        \item Welcome in the second level ;).
+        \begin{itemize}
+            \item Welcome in the third level ;).
+            \begin{itemize}
+                \item Welcome in the fourth level ;). 
+                \item Do You like the fourth level ? 
+                \item This level is deep, isn't ?  % To here the Compiler will tell you enough.
+            \end{itemize}
+            \item Do You like the level ?
+            \item This level is deeper than the last one.
+        \end{itemize}
+        \item Do you like the second level ?
+        \item People use this level too much.
+    \end{itemize}
+    \item ruler
+    \begin{itemize}
+        \item note one
+        \item note two
+        \item note three
+    \end{itemize}
+    \item calculator
+    
+\end{itemize}
+
+
+\end{document}
